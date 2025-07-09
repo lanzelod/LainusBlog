@@ -1,0 +1,23 @@
+[
+  {
+    "id": "dia 1",
+    "title": "Día 1: Comenzando el viaje",
+    "date": "2025-07-01",
+    "summary": "Hoy empecé mi viaje de 100 días de escritura y programación. Estoy emocionado por lo que vendrá.",
+    "content": "Hoy empecé mi viaje de 100 días de escritura y programación. Estoy emocionado por lo que vendrá Hoy empecé mi viaje de 100 días de escritura y Hoy empecé mi viaje de 100 días de escritura y Hoy empecé mi viaje de 100 días de escritura y Hoy empecé mi viaje de 100 días de escritura y <br> <img src=https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGdxaXVmbzUxZWxnc2Z3eW91b242a2xrM2U3OWFsOGNjZGpjczB4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ljuSksqL9j0yI/giphy.gif> " 
+  },
+  {
+    "id": "minimalist-style",
+    "title": "Why I Chose a Minimalist Style",
+    "date": "2025-07-08",
+    "summary": "I wanted something clean and simple, without distractions — just pure writing and code.",
+    "content": "I wanted something clean and simple, without distractions — just pure writing and code. Here is the detailed content with examples and insights..."
+  },
+  {
+    "id": "prueba",
+    "title": "Cómo aprendí JavaScript",
+    "date": "2025-07-09",
+    "summary": "Un resumen breve de cómo comencé con JavaScript...",
+    "content": "<h1>Mi historia con JavaScript</h1><p>Todo empezó en 2020 cuando descubrí este maravilloso lenguaje.</p><h2>Primeros pasos</h2><p>Empecé viendo videos y practicando con ejercicios simples.</p><img src='images/js-start.png' alt='Aprendiendo JS' style='max-width:100%; border-radius:8px;'><p>¡Y me encantó!</p><h2>Lo que uso ahora</h2><ul><li>Visual Studio Code</li><li>Node.js</li><li>React</li></ul><p>Y así sigo aprendiendo.</p><img src='https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif' alt='GIF' style='max-width:100%; border-radius:8px;'>"
+  }
+]

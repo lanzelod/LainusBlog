@@ -1,0 +1,249 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --link: #000000; /* redes en negro */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #eaeaea;
+    --link: #e0e0e0;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  width: 260px;
+  padding: 2rem 1.5rem;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background-color: #1a1a1a;
+  }
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid var(--link);
+  align-self: center;
+}
+
+.sidebar h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sidebar p {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.social a {
+  display: block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.social a:hover,
+.social a:focus {
+  background-color: #3388de;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+/* === MAIN CONTENT === */
+.container {
+  flex: 1;
+  padding: 2rem 3rem;
+  margin: 0; /* quitar el auto para que no centre */
+  max-width: none; /* quitar restricción de ancho */
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* === POSTS === */
+.post {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid var(--link);
+  background-color: #f9f9f9;
+  border-radius: 12px 12px 12px 12px;
+  width: calc(100% - 40px); /* ancho completo menos margen derecho */
+  margin-right: 40px; /* margen derecho visible */
+  box-sizing: border-box;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .post {
+    background-color: #1e1e1e;
+    border-left-color: var(--link);
+  }
+}
+
+
+.post h2 a {
+  color: var(--link);
+  text-decoration: none;
+  outline: none;
+}
+
+.post h2 a:hover,
+.post h2 a:focus {
+  background-color: #3388de; /* o el color que prefieras para el hover */
+  color: white;
+  text-decoration: none;
+  outline: none;
+  border-radius: 6px; /* opcional para que parezca botón */
+  padding: 0.2rem 0.4rem; /* opcional para que el hover tenga espacio */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post h2 a::after {
+  content: " →";
+  font-weight: 700;
+  color: var(--link);
+  transition: color 0.3s ease;
+}
+
+.post h2 a:hover::after,
+.post h2 a:focus::after {
+  color: #555555; /* cambia el color en hover/focus */
+}
+
+
+
+.post .date {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.post p {
+  font-size: 1rem;
+}
+
+/* === SEARCH BOX === */
+.search {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #202124;
+  outline-offset: 2px;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: 'Roboto', Arial, sans-serif;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search::placeholder {
+  color: #9aa0a6;
+}
+
+.search:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(66, 133, 244, 0.6);
+  background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .search {
+    background-color: #202124;
+    color: #e8eaed;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.1);
+  }
+
+  .search::placeholder {
+    color: #bdc1c6;
+  }
+
+  .search:focus {
+    box-shadow: 0 0 8px rgba(96, 165, 250, 0.6);
+    background-color: #202124;
+  }
+}
+
+/* === BACK LINK (para post.html) === */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.back-link:hover,
+.back-link:focus {
+  background-color: #555555;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+.post-content {
+  background-color: white;
+}
+
+
+.containerpost
+{
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
