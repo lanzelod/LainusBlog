@@ -187,7 +187,14 @@ h1 {
   border-radius: 12px 12px 12px 12px;
   width: calc(100% - 40px); /* ancho completo menos margen derecho */
   margin-right: 40px; /* margen derecho visible */
+  
+    flex: 1;
+  padding: 2rem 3rem;
+  margin: 0; /* quitar el auto para que no centre */
+  max-width: 1400px; /* quitar restricción de ancho */
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto; /* centrar el contenido */
 }
 
 
