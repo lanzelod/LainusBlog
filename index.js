@@ -1,35 +1,51 @@
 let allPosts = [];
+let activeTag = null;
 
-function renderPosts(posts) {
-  const postsContainer = document.getElementById('posts');
-  postsContainer.innerHTML = '';
-  posts.forEach(post => {
-    const postEl = document.createElement('div');
-    postEl.className = 'post';
+fetch("posts.json")
+  .then((res) => res.json())
+  .then((data) => {
+    allPosts = data;
+    renderTags(data);
+    renderPosts(data);
+  });
 
-    postEl.innerHTML = `
-      <h2><a href="post.html?id=${post.id}">${post.title}</a></h2>
-      <div class="date">${post.date}</div>
-      <p>${post.summary}</p>
-    `;
+function renderTags(posts) {
+  const tagSet = new Set();
+  posts.forEach((post) => {
+    post.tags?.forEach((tag) => tagSet.add(tag));
+  });
 
-    postsContainer.appendChild(postEl);
+  const tagList = document.getElementById("tag-list");
+  tagSet.forEach((tag) => {
+    const button = document.createElement("button");
+    button.textContent = `#${tag}`;
+    button.addEventListener("click", () => {
+      if (activeTag === tag) {
+        activeTag = null;
+        button.classList.remove("active");
+        renderPosts(allPosts);
+      } else {
+        activeTag = tag;
+        document.querySelectorAll(".tags button").forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        renderPosts(allPosts.filter((p) => p.tags?.includes(tag)));
+      }
+    });
+    tagList.appendChild(button);
   });
 }
 
-fetch('posts.json')
-  .then(res => res.json())
-  .then(posts => {
-    allPosts = posts;
-    renderPosts(allPosts);
+function renderPosts(posts) {
+  const container = document.getElementById("posts");
+  container.innerHTML = "";
+  posts.forEach((post) => {
+    const div = document.createElement("div");
+    div.className = "post";
+    div.innerHTML = `
+      <h2><a href="post.html?id=${post.id}">${post.title}</a></h2>
+      <div class="date">${post.date}</div>
+      <p>${post.content.slice(0, 150)}...</p>
+    `;
+    container.appendChild(div);
   });
-
-document.getElementById('search').addEventListener('input', (e) => {
-  const query = e.target.value.toLowerCase();
-  const filtered = allPosts.filter(post =>
-    post.title.toLowerCase().includes(query) ||
-    post.summary.toLowerCase().includes(query) ||
-    post.date.includes(query)
-  );
-  renderPosts(filtered);
-});
+}
