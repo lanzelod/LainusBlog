@@ -1,42 +1,50 @@
 [
   {
-    "id": "Dia 1",
-    "title": "dia 1",
-    "date": "2025-07-09",
-    "tags": ["diario"],
-    "summary": "Este es mi primer blog en el que quiero...",
-    "content": "Este es mi primer blog en el que quiero hablar de todo tipo de cosas, la verdad quiero un lugar donde pueda expresarme y hablar de mis gustos, mostrar lo que pienso y reflexiono de la vida. Quiero que sea mi diario personal pero publico.<br>También quiero que mostrar mi día a día aprendiendo a programar en C# y cuando sea el lanzamiento de s&box hablar sobre el motor.<br>Solo será este un blog introductorio, hoy hice la pagina y me gusto como me quedo, talvez vaya modificando cosas para hacerlo mas interesante.<br><br><br><img src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXFyamJvenhkcG91Z2ZxcXNycG44Y2Z6cm5wazZwbXlub24wbWZjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcqFtKrCxlqxB1vCYQ/giphy.gif\" alt=\"gif\"> "
+      "id": "Dia 1",
+      "title": "dia 1",
+      "date": "2025-07-09",
+      "tags": ["diario"],
+      "summary": "Este es mi primer blog en el que quiero...",
+      "content": "Prueba de diario"
   },
   {
-    "id": "Dia 1",
-    "title": "dia 1",
-    "date": "2025-07-09",
-    "tags": ["perro"],
-    "summary": "Este es mi primer blog en el que quiero...",
-    "content": "Este es mi primer blog en el que quiero hablar de todo tipo de cosas, la verdad quiero un lugar donde pueda expresarme y hablar de mis gustos, mostrar lo que pienso y reflexiono de la vida. Quiero que sea mi diario personal pero publico.<br>También quiero que mostrar mi día a día aprendiendo a programar en C# y cuando sea el lanzamiento de s&box hablar sobre el motor.<br>Solo será este un blog introductorio, hoy hice la pagina y me gusto como me quedo, talvez vaya modificando cosas para hacerlo mas interesante.<br><br><br><img src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXFyamJvenhkcG91Z2ZxcXNycG44Y2Z6cm5wazZwbXlub24wbWZjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcqFtKrCxlqxB1vCYQ/giphy.gif\" alt=\"gif\"> "
+      "id": "Dia 2",
+      "title": "dia 2",
+      "date": "2025-07-09",
+      "tags": ["programacion"],
+      "summary": "Este es mi primer blog en el que quiero...",
+      "content": "Prueba de diario"
   },
   {
-    "id": "Dia 1",
-    "title": "dia 1",
-    "date": "2025-07-09",
-    "tags": ["perro"],
-    "summary": "Este es mi primer blog en el que quiero...",
-    "content": "Este es mi primer blog en el que quiero hablar de todo tipo de cosas, la verdad quiero un lugar donde pueda expresarme y hablar de mis gustos, mostrar lo que pienso y reflexiono de la vida. Quiero que sea mi diario personal pero publico.<br>También quiero que mostrar mi día a día aprendiendo a programar en C# y cuando sea el lanzamiento de s&box hablar sobre el motor.<br>Solo será este un blog introductorio, hoy hice la pagina y me gusto como me quedo, talvez vaya modificando cosas para hacerlo mas interesante.<br><br><br><img src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXFyamJvenhkcG91Z2ZxcXNycG44Y2Z6cm5wazZwbXlub24wbWZjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcqFtKrCxlqxB1vCYQ/giphy.gif\" alt=\"gif\"> "
+      "id": "Dia 3",
+      "title": "dia 3",
+      "date": "2025-07-09",
+      "tags": ["diario"],
+      "summary": "Este es mi primer blog en el que quiero...",
+      "content": "Prueba de diario"
   },
   {
-    "id": "Dia 1",
-    "title": "dia 1",
-    "date": "2025-07-09",
-    "tags": ["diario"],
-    "summary": "Este es mi primer blog en el que quiero...",
-    "content": "Este es mi primer blog en el que quiero hablar de todo tipo de cosas, la verdad quiero un lugar donde pueda expresarme y hablar de mis gustos, mostrar lo que pienso y reflexiono de la vida. Quiero que sea mi diario personal pero publico.<br>También quiero que mostrar mi día a día aprendiendo a programar en C# y cuando sea el lanzamiento de s&box hablar sobre el motor.<br>Solo será este un blog introductorio, hoy hice la pagina y me gusto como me quedo, talvez vaya modificando cosas para hacerlo mas interesante.<br><br><br><img src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXFyamJvenhkcG91Z2ZxcXNycG44Y2Z6cm5wazZwbXlub24wbWZjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcqFtKrCxlqxB1vCYQ/giphy.gif\" alt=\"gif\"> "
+      "id": "Dia 4",
+      "title": "dia 4",
+      "date": "2025-07-09",
+      "tags": ["programacion"],
+      "summary": "Este es mi primer blog en el que quiero...",
+      "content": "Prueba de diario"
   },
   {
-    "id": "Dia 1",
-    "title": "dia 1",
-    "date": "2025-07-09",
-    "tags": ["perro"],
-    "summary": "Este es mi primer blog en el que quiero...",
-    "content": "Este es mi primer blog en el que quiero hablar de todo tipo de cosas, la verdad quiero un lugar donde pueda expresarme y hablar de mis gustos, mostrar lo que pienso y reflexiono de la vida. Quiero que sea mi diario personal pero publico.<br>También quiero que mostrar mi día a día aprendiendo a programar en C# y cuando sea el lanzamiento de s&box hablar sobre el motor.<br>Solo será este un blog introductorio, hoy hice la pagina y me gusto como me quedo, talvez vaya modificando cosas para hacerlo mas interesante.<br><br><br><img src=\"https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXFyamJvenhkcG91Z2ZxcXNycG44Y2Z6cm5wazZwbXlub24wbWZjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pcqFtKrCxlqxB1vCYQ/giphy.gif\" alt=\"gif\"> "
+      "id": "Dia 5",
+      "title": "dia 5",
+      "date": "2025-07-09",
+      "tags": ["diario"],
+      "summary": "Este es mi primer blog en el que quiero...",
+      "content": "Prueba de diario"
+  },
+  {
+      "id": "Dia 6",
+      "title": "dia 6",
+      "date": "2025-07-09",
+      "tags": ["musica"],
+      "summary": "Este es mi primer blog en el que quiero...",
+      "content": "Prueba de diario"
   }
 ]
